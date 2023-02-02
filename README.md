@@ -174,11 +174,11 @@ $ git push -u origin main
 
 > Создаём файл hello_world.cpp. В него пишем:
 > ```cpp
-include <iostream>
-using namespace std;
-int main() {
-cout << "Hello world!";
-}
+> include <iostream>
+> using namespace std;
+> int main() {
+> cout << "Hello world!";
+> }
 > ```
 
 4. Добавьте этот файл в локальную копию репозитория.
@@ -197,16 +197,16 @@ cout << "Hello world!";
 
 > В файле hello_world.cpp:
 > ```cpp
-include <iostream>
-include <string>
-using namespace std;
-int main() {
-cout << "Hello world!";
-string name;
-cout << "Please enter name";
-cin >> name;
-cout << "Hello world from " << name;
-}
+> include <iostream>
+> include <string>
+> using namespace std;
+> int main() {
+> cout << "Hello world!";
+> string name;
+> cout << "Please enter name";
+> cin >> name;
+> cout << "Hello world from " << name;
+> }
 > ```
 
 7. Закоммитьте новую версию программы. Почему не надо добавлять файл повторно `git add`?
@@ -241,14 +241,14 @@ cout << "Hello world from " << name;
 
 > В файле hello_world.cpp:
 > ```cpp
-include <iostream>
-include <string>
-int main() {
-std::string name;
-std::cout << "Please enter name";
-std::cin >> name;
-std::cout << "Hello world from " << name;
-}
+> include <iostream>
+> include <string>
+> int main() {
+> std::string name;
+> std::cout << "Please enter name";
+> std::cin >> name;
+> std::cout << "Hello world from " << name;
+> }
 > ```
 >
 
@@ -272,15 +272,15 @@ std::cout << "Hello world from " << name;
 
 > В файле hello_world.cpp:
 > ```cpp
-include <iostream>
-include <string>
-int main() {
-std::string name;
-// Бабушка технарь, дед гуманитарий
-std::cout << "Please enter name";
-std::cin >> name;
-std::cout << "Hello world from " << name;
-}
+> include <iostream>
+> include <string>
+> int main() {
+> std::string name;
+> // Бабушка технарь, дед гуманитарий
+> std::cout << "Please enter name";
+> std::cin >> name;
+> std::cout << "Hello world from " << name;
+> }
 > ```
 
 7. **commit**, **push**.
@@ -369,27 +369,27 @@ std::cout << "Hello world from " << name;
 > ```
 > Процесс ещё не завершён. Откройте файл hello_world, он будет выглядеть примерно так:
 > ```cpp
-<<<<<<< HEAD
-include <iostream>
-include <string>
-int main() {
-std::string name;
-// Я изобрёл универсальный комментарий
-std::cout << "Please enter name";
-std::cin >> name;
-std::cout << "Hello world from " << name;
-=======
-include<iostream> include<string>
-int
-main()
-{
-  std::string name;
-  // Бабушка технарь, дед гуманитарий
-  std::cout << "Please enter name";
-  std::cin >> name;
-  std::cout << "Hello world from " << name;
->>>>>>> changed codestyle
-}
+> <<<<<<< HEAD
+> include <iostream>
+> include <string>
+> int main() {
+> std::string name;
+> // Я изобрёл универсальный комментарий
+> std::cout << "Please enter name";
+> std::cin >> name;
+> std::cout << "Hello world from " << name;
+> =======
+> include<iostream> include<string>
+> int
+> main()
+> {
+>   std::string name;
+>   // Бабушка технарь, дед гуманитарий
+>   std::cout << "Please enter name";
+>   std::cin >> name;
+>   std::cout << "Hello world from " << name;
+> >>>>>>> changed codestyle
+> }
 > ```
 > Здесь надо глазками посмотреть, чем файлы отличаются и ручками объединить их.
 > Для этого в одной из копий кода напишите изменения из второй копии кода, затем удалите вторую копию кода и весь мусор.
@@ -397,16 +397,16 @@ main()
 > Должно получиться что-то вроде этого:
 >
 > ```cpp
-include<iostream> include<string>
-int
-main()
-{
-  std::string name;
-  // Я изобрёл универсальный комментарий
-  std::cout << "Please enter name";
-  std::cin >> name;
-  std::cout << "Hello world from " << name;
-}
+> include<iostream> include<string>
+> int
+> main()
+> {
+>   std::string name;
+>   // Я изобрёл универсальный комментарий
+>   std::cout << "Please enter name";
+>   std::cin >> name;
+>   std::cout << "Hello world from " << name;
+> }
 > ```
 > 
 > ```sh
