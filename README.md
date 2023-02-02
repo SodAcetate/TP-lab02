@@ -161,13 +161,13 @@ $ gist REPORT.md
 > Создаём директорию для лабы и открываем терминал в ней.
 > 
 > ```
-$ echo "# TP-lab02" >> README.md
-$ git init
-$ git add README.md
-$ git commit -m "first commit"
-$ git branch -M main
-$ git remote add origin https://github.com/<user>/TP-lab02.git
-$ git push -u origin main
+> $ echo "# TP-lab02" >> README.md
+> $ git init
+> $ git add README.md
+> $ git commit -m "first commit"
+> $ git branch -M main
+> $ git remote add origin https://github.com/<user>/TP-lab02.git
+> $ git push -u origin main
 > ```
 
 3. Создайте файл `hello_world.cpp` в локальной копии репозитория (который должен был появиться на шаге 2). Реализуйте программу **Hello world** на языке C++ используя плохой стиль кода. Например, после заголовочных файлов вставьте строку `using namespace std;`.
